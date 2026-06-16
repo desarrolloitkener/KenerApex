@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cumbre de Innovación Hospitalaria Kener Apex — Del 4 al 6 de septiembre en AVA Resort Cancún." />
+  <title>Cumbre de Innovación Hospitalaria | Kener Apex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra de cuenta regresiva -->
+  <aside class="countdown-bar" aria-label="Cuenta regresiva al evento">
+    <div class="container countdown-inner">
+      <span class="countdown-label">Faltan para la Cumbre</span>
+      <div class="countdown-units" id="countdown">
+        <div class="countdown-unit">
+          <span class="countdown-value" id="days">00</span>
+          <span class="countdown-name">Días</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="hours">00</span>
+          <span class="countdown-name">Horas</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="minutes">00</span>
+          <span class="countdown-name">Min</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="seconds">00</span>
+          <span class="countdown-name">Seg</span>
+        </div>
+      </div>
+      <span class="countdown-date">4 – 6 de septiembre · AVA Resort Cancún</span>
+    </div>
+  </aside>
+
+  <!-- Hero -->
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <nav class="hero-nav">
+        <div class="logos">
+          <div class="logo-kener" aria-label="Kener">
+            <svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="true">
+              <rect width="48" height="48" rx="10" fill="#1565C0"/>
+              <text x="24" y="33" text-anchor="middle" fill="white" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="22">K</text>
+            </svg>
+            <span class="logo-text">KENER</span>
+          </div>
+          <div class="logo-apex" aria-label="Apex">
+            <span class="apex-mark">APEX</span>
+          </div>
+        </div>
+        <button type="button" class="demo-toggle" id="demoToggle" title="Vista previa: médico logueado">
+          <span class="demo-dot"></span>
+          Vista médico
+        </button>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-main">
+          <div class="hero-copy">
+            <div class="hero-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span>Evento exclusivo</span>
+              <span class="eyebrow-sep" aria-hidden="true">·</span>
+              <span>Laboratorios Kener</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="title-line title-line--1">Cumbre de Innovación</span>
+              <span class="title-line title-line--2">Hospitalaria</span>
+              <span class="title-brand">
+                <span class="title-brand-kener">Kener</span>
+                <span class="title-brand-apex">Apex</span>
+              </span>
+            </h1>
+
+            <div class="hero-divider" aria-hidden="true"></div>
+
+            <blockquote class="hero-tagline">
+              <span class="tagline-mark" aria-hidden="true">"</span>
+              Liderando el futuro de la excelencia hospitalaria con distinción y visión.
+            </blockquote>
+
+            <div class="hero-meta">
+              <span class="hero-meta-chip">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                4 – 6 de septiembre 2026
+              </span>
+              <span class="hero-meta-chip">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                AVA Resort Cancún
+              </span>
+            </div>
+          </div>
+
+          <div class="hero-pills">
+            <div class="pill">
+              <span class="pill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M8 6h8M10 6v12M14 6v12M8 18h8"/></svg>
+              </span>
+              <span>Excelencia en fabricación de inyectables</span>
+            </div>
+            <div class="pill">
+              <span class="pill-icon pill-icon--academy" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3L2 8l10 5 10-5-10-5z"/><path d="M6 11v4c0 2 2.5 4 6 4s6-2 6-4v-4"/></svg>
+              </span>
+              <span>Educación médica continua</span>
+            </div>
+            <div class="pill">
+              <span class="pill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M8 6h8M10 6v12M14 6v12M8 18h8"/></svg>
+              </span>
+              <span>Conoce más de nuestros productos</span>
+            </div>
+            <div class="pill">
+              <span class="pill-icon pill-icon--gold" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="10" r="6"/><path d="M8 20h8l-1-4H9l-1 4z"/></svg>
+              </span>
+              <span>Calidad certificada</span>
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a href="registro.html" class="btn btn-primary">Confirmar asistencia</a>
+            <a href="#faq" class="btn btn-ghost">Preguntas frecuentes</a>
+          </div>
+        </div>
+
+        <div class="hero-decoration" aria-hidden="true">
+          <div class="glass-card bell-card">
+            <div class="bell-icon">🔔</div>
+            <p>Actualizaciones del evento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Centro de Comunicación (personalizado para médico logueado) -->
+  <section class="communication-center hidden" id="communicationCenter" aria-labelledby="comm-title">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-badge">Centro de comunicación</span>
+        <h2 id="comm-title">Bienvenido, <span id="doctorName">Dr. Juan Carlos</span></h2>
+        <p class="section-sub">Su información de viaje y hospedaje para la Cumbre Kener Apex</p>
+      </div>
+
+      <div class="comm-grid">
+        <article class="comm-card glass-panel">
+          <div class="comm-card-icon comm-card-icon--flight">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12h5l2-4 4 8 2-4h7"/></svg>
+          </div>
+          <h3>Detalles de vuelo</h3>
+          <dl class="comm-details">
+            <div><dt>Aerolínea</dt><dd id="flightAirline">Aeroméxico</dd></div>
+            <div><dt>Vuelo</dt><dd id="flightNumber">AM 445</dd></div>
+            <div><dt>Asiento</dt><dd id="flightSeat">12A</dd></div>
+            <div><dt>Fecha</dt><dd>3 de septiembre · Salida 14:30</dd></div>
+          </dl>
+        </article>
+
+        <article class="comm-card glass-panel">
+          <div class="comm-card-icon comm-card-icon--hotel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V7l9-4 9 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <h3>Hospedaje</h3>
+          <dl class="comm-details">
+            <div><dt>Hotel</dt><dd>AVA Resort Cancún</dd></div>
+            <div><dt>Habitación</dt><dd id="roomNumber">2847</dd></div>
+            <div><dt>Check-in</dt><dd>4 de septiembre · 15:00</dd></div>
+            <div><dt>Check-out</dt><dd>6 de septiembre · 12:00</dd></div>
+          </dl>
+        </article>
+
+        <article class="comm-card glass-panel comm-card--map">
+          <h3>Ubicación del hotel</h3>
+          <p class="comm-address">Blvd. Kukulcán Km 25.3, Zona Hotelera, 77500 Cancún, Q.R.</p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=AVA+Resort+Cancun,+Blvd.+Kukulcan+Km+25.3,+77500+Cancun,+Quintana+Roo"
+            class="map-preview-link map-preview-link--comm"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir AVA Resort Cancún en Google Maps"
+          >
+            <div class="map-preview map-preview--comm">
+              <iframe
+                src="https://maps.google.com/maps?q=AVA+Resort+Canc%C3%BAn,+Blvd.+Kukulcan+Km+25.3,+Canc%C3%BAn&hl=es&z=15&output=embed"
+                loading="lazy"
+                tabindex="-1"
+                title="Vista previa AVA Resort Cancún"
+              ></iframe>
+              <span class="map-preview-badge">
+                Maps
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              </span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Actualizaciones -->
+  <main>
+    <section class="updates" id="actualizaciones">
+      <div class="container">
+        <h2 class="section-title">Actualizaciones</h2>
+
+        <div class="updates-grid">
+          <article class="update-card">
+            <div class="update-icon update-icon--gold">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 005 14h14a1 1 0 00.707-1.707L19 11.586V8a6 6 0 00-6-6zm0 20a3 3 0 01-3-3h6a3 3 0 01-3 3z"/></svg>
+            </div>
+            <h3>Últimas noticias y actualizaciones del evento</h3>
+            <p>Aquí podrá encontrar las últimas noticias y actualizaciones sobre el evento.</p>
+            <ul class="news-list">
+              <li><span class="news-date">Próximamente</span> Agenda preliminar disponible tras iniciar sesión</li>
+              <li><span class="news-date">Próximamente</span> Detalles de transportación aeropuerto–hotel</li>
+            </ul>
+          </article>
+
+          <article class="update-card">
+            <div class="update-icon update-icon--blue">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+            </div>
+            <h3>Lugar: AVA Resort Cancún</h3>
+            <p>Un paraíso de lujo y confort situado en las playas más icónicas de Cancún, diseñado para la inspiración y la excelencia.</p>
+            <div class="location-visuals">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=AVA+Resort+Cancun,+Blvd.+Kukulcan+Km+25.3,+77500+Cancun,+Quintana+Roo"
+                class="map-preview-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir AVA Resort Cancún en Google Maps"
+              >
+                <div class="map-preview">
+                  <iframe
+                    src="https://maps.google.com/maps?q=AVA+Resort+Canc%C3%BAn,+Blvd.+Kukulcan+Km+25.3,+Canc%C3%BAn&hl=es&z=15&output=embed"
+                    loading="lazy"
+                    tabindex="-1"
+                    title="Vista previa AVA Resort Cancún"
+                  ></iframe>
+                  <span class="map-preview-badge">
+                    Maps
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                  </span>
+                </div>
+              </a>
+              <div class="location-photo">
+                <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&q=80" alt="Vista de resort con piscina en Cancún" loading="lazy" />
+              </div>
+            </div>
+            <p class="location-address">Blvd. Kukulcán Km 25.3, Zona Hotelera, 77500 Cancún, Q.R.</p>
+          </article>
+
+          <article class="update-card">
+            <div class="update-icon update-icon--blue">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>
+            </div>
+            <h3>Fechas: Del 4 al 6 de septiembre</h3>
+            <p>Se compartirán los detalles y horarios específicos próximamente.</p>
+            <div class="agenda-preview">
+              <div class="agenda-day">
+                <span class="agenda-num">4</span>
+                <span class="agenda-label">Registro y cóctel</span>
+              </div>
+              <div class="agenda-day agenda-day--main">
+                <span class="agenda-num">5</span>
+                <span class="agenda-label">Jornada principal</span>
+              </div>
+              <div class="agenda-day">
+                <span class="agenda-num">6</span>
+                <span class="agenda-label">Clausura</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registro CTA -->
+    <section class="register-cta" id="registro">
+      <div class="container register-inner">
+        <div class="register-copy">
+          <h2>Confirme su asistencia a la Cumbre</h2>
+          <p>Complete el formulario de registro para que el comité organizador confirme su participación y le envíe los detalles de hospedaje y logística.</p>
+        </div>
+        <a href="registro.html" class="btn btn-primary btn-lg">
+          Ir al formulario de registro
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Preguntas frecuentes</h2>
+          <p class="section-sub section-sub--dark">Cumbre Kener Apex</p>
+        </div>
+
+        <div class="faq-groups">
+          <div class="faq-group">
+            <h3 class="faq-group-title">Sede y logística</h3>
+            <div class="accordion">
+              <details class="accordion-item">
+                <summary>¿Dónde se llevará a cabo el evento y cómo llego?</summary>
+                <p>La cumbre tendrá lugar en el AVA Resort Cancún, ubicado en la zona hotelera/costera de Cancún. El hotel se encuentra a aproximadamente 15–20 minutos del Aeropuerto Internacional de Cancún (CUN). Próximamente compartiremos las opciones y convenios de transportación oficial aeropuerto–hotel–aeropuerto.</p>
+              </details>
+              <details class="accordion-item">
+                <summary>¿El evento incluye el hospedaje?</summary>
+                <p>Los detalles sobre el bloque de habitaciones reservadas, tarifas preferenciales y el proceso de registro en el hotel serán enviados a su correo electrónico una vez que su registro a la Cumbre sea confirmado por el comité organizador.</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <h3 class="faq-group-title">Agenda y contenido académico</h3>
+            <div class="accordion">
+              <details class="accordion-item">
+                <summary>¿Cuál es el horario oficial de las actividades del 4 al 6 de septiembre?</summary>
+                <p>La agenda detallada está en proceso de optimización por parte de nuestro comité académico. Sin embargo, considere el <strong>4 de septiembre por la tarde</strong> para el registro y cóctel de bienvenida, el <strong>5 de septiembre</strong> como la jornada principal de conferencias (todo el día), y el <strong>6 de septiembre</strong> para las conclusiones y clausura al mediodía.</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="faq-group">
+            <h3 class="faq-group-title">Soporte y contacto</h3>
+            <div class="accordion">
+              <details class="accordion-item">
+                <summary>¿Qué hago si tengo requerimientos dietéticos especiales o necesidades de accesibilidad?</summary>
+                <p>Al momento de completar su formulario de registro digital, encontrará una sección específica para indicar alergias, preferencias alimentarias (vegetariano, vegano, kosher, etc.) o cualquier asistencia de accesibilidad que requiera durante su estancia en el resort.</p>
+              </details>
+              <details class="accordion-item">
+                <summary>¿Puedo asistir a la Cumbre con un acompañante?</summary>
+                <p>Sí, es posible asistir con un acompañante al hotel. Sin embargo, Laboratorios Kener no se hace responsable de los gastos adicionales de hospedaje, alimentos, transportación ni accesos al evento para dicha persona. Todos los costos del acompañante deberán ser cubiertos de manera particular.</p>
+              </details>
+              <details class="accordion-item">
+                <summary>Si tengo dudas específicas sobre mi hospedaje o mi vuelo, ¿a quién puedo contactar?</summary>
+                <p>Para cualquier duda, cambio o aclaración relacionada con sus boletos de avión o asignación de habitación, por favor comuníquese directamente con nuestra agencia de viajes organizadora al correo: <em>[Correo por confirmar]</em>.</p>
+              </details>
+              <details class="accordion-item">
+                <summary>¿Dónde puedo revisar la agenda oficial del evento?</summary>
+                <p>Puede consultar el programa completo en el apartado de "Agenda Preliminar" que se encuentra disponible inmediatamente después de iniciar sesión con su cuenta en este portal.</p>
+              </details>
+              <details class="accordion-item">
+                <summary>¿Cuál es el código de vestimenta (Dress Code) para las diferentes actividades?</summary>
+                <p>Ropa adecuada para clima de playa, pero con aire acondicionado en los salones.</p>
+              </details>
+              <details class="accordion-item">
+                <summary>Si requiero una carta de invitación formal para tramitar un permiso institucional en mi hospital, ¿cómo la solicito?</summary>
+                <p>Puede solicitar su carta de invitación oficial enviando un correo a <em>[Correo por confirmar]</em> indicando su nombre completo, cédula profesional, especialidad y el nombre de la institución hospitalaria a la que va dirigida.</p>
+              </details>
+              <details class="accordion-item">
+                <summary>¿El hotel cuenta con facilidades para seguir trabajando o atender llamadas de emergencia de mis pacientes?</summary>
+                <p>El AVA Resort Cancún y las áreas del evento cuentan con internet Wi-Fi de alta velocidad incluido. Asimismo, el centro de convenciones dispone de áreas ejecutivas y espacios cómodos fuera de los salones para que pueda atender cualquier asunto prioritario con total privacidad.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">KENER</span>
+        <span class="apex-mark apex-mark--sm">APEX</span>
+      </div>
+      <p class="footer-copy">© 2026 Laboratorios Kener. Cumbre de Innovación Hospitalaria.</p>
+      <button type="button" class="chatbot-btn" id="chatbotBtn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+        Chat Bot — Preguntas frecuentes
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Confirme su asistencia a la Cumbre de Innovación Hospitalaria Kener Apex." />
+  <title>Confirmación de asistencia | Kener Apex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="form-page">
+  <header class="form-page-header">
+    <div class="container form-page-nav">
+      <a href="index.html" class="form-back-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Volver al inicio
+      </a>
+      <div class="form-page-logos">
+        <span class="logo-text logo-text--dark">KENER</span>
+        <span class="apex-mark apex-mark--sm">APEX</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="form-page-main">
+    <div class="form-card" id="formCard">
+      <p class="form-eyebrow">Confirmación de asistencia</p>
+      <h1 class="form-title">Acuerdo de participación médica</h1>
+      <p class="form-intro">
+        Formulario para confirmar su asistencia a la <strong>Cumbre de Innovación Hospitalaria Kener Apex</strong>,
+        del 4 al 6 de septiembre en AVA Resort Cancún.
+      </p>
+
+      <form class="registration-form" id="registrationForm" novalidate>
+        <div class="form-field">
+          <label for="fullName">Nombre completo</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Dr(a). Nombre Apellido"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="email">Correo institucional</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="doctor@hospital.com"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="institution">Hospital o institución</label>
+          <input
+            type="text"
+            id="institution"
+            name="institution"
+            placeholder="Hospital Central"
+            autocomplete="organization"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="attendance">¿Asistirá al evento?</label>
+          <div class="select-wrap">
+            <select id="attendance" name="attendance" required>
+              <option value="si">Sí, confirmo mi asistencia</option>
+              <option value="despues">Necesito confirmar más adelante</option>
+              <option value="no">No podré asistir</option>
+            </select>
+            <svg class="select-chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="comments">Comentarios logísticos</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            placeholder="Restricciones alimentarias, accesibilidad, horarios de llegada o requerimientos especiales"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Enviar confirmación</button>
+      </form>
+    </div>
+
+    <div class="form-success hidden" id="formSuccess" role="status">
+      <div class="form-success-icon" aria-hidden="true">✓</div>
+      <h2>Confirmación recibida</h2>
+      <p>Su respuesta ha sido registrada. El comité organizador se pondrá en contacto con usted para los siguientes pasos.</p>
+      <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+    </div>
+  </main>
+
+  <script src="form.js"></script>
+</body>
+</html>
